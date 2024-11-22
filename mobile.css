@@ -745,8 +745,7 @@
         border-radius: 15px;
         border: 10px solid white;
         height: 300px;
-        width: 10%;
-        max-width: 100%;
+        width: 30%;
         pointer-events: none;
     
     }
