@@ -696,7 +696,8 @@
         border-radius: 15px;
         border: 10px solid white;
         height: 300px;
-        width: 650px;
+        width: 100%;
+        max-width: 100%;
         pointer-events: none;
         margin-left: 20px;
     
