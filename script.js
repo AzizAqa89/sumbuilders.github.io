@@ -98,3 +98,50 @@ function openNextCard(currentCardNumber) {
     openCard(nextCardContent, nextVline, nextCard);
     nextToggle.src = "./icons/minus.svg";
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const carouselInner = document.querySelector(".carousel-inner");
+    const items = document.querySelectorAll(".carousel-item");
+    const prevButton = document.querySelector(".carousel-control.prev");
+    const nextButton = document.querySelector(".carousel-control.next");
+    let currentIndex = 0;
+
+    const updateCarousel = () => {
+        carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+    };
+
+    const showNext = () => {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
+    };
+
+    const showPrev = () => {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateCarousel();
+    };
+
+    nextButton.addEventListener("click", showNext);
+    prevButton.addEventListener("click", showPrev);
+
+    setInterval(showNext, 5000); 
+
+    let startX = 0;
+    let endX = 0;
+
+    carouselInner.addEventListener("touchstart", (e) => {
+        startX = e.touches[0].clientX;
+    });
+
+    carouselInner.addEventListener("touchmove", (e) => {
+        endX = e.touches[0].clientX;
+    });
+
+    carouselInner.addEventListener("touchend", () => {
+        if (startX - endX > 50) {
+            showNext(); 
+        } else if (endX - startX > 50) {
+            showPrev(); 
+        }
+    });
+});
