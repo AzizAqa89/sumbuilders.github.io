@@ -1,113 +1,368 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
-</head>
-<body>
-    
-    <nav class="headNav">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="desktop.css">
+        <link rel="stylesheet" href="mobile.css">
+        <link rel="stylesheet" href="tablet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <nav class="headNav">
 
-        <a href="#" class="logo"><img src="./images/sumbuilders-PNG.png" alt="#"></a>
+            <div class="logo"><a href="#video"><img src="./images/sumbuilders-PNG.png" alt="#"></a></div>
 
-        <ul class="headNavMenu">
+            <ul class="headNavMenu">
 
-            <a href="#">
-                <li>Haqqımızda</li>
-            </a>
-            <a href="#">
-                <li>Təlim</li>
-            </a>
-            <a href="#">
-                <li>Olimpiada</li>
-            </a>
-            <a href="#">
-                <li>İstehsal</li>
-            </a>
-            <a href="#">
-                <li>Əlaqə</li>
-            </a>
-            <a href="#">Qeydiyyat</a>
+                <a href="#about">
+                    Haqqımızda
+                </a>
+                <a href="#training">
+                    Təlim
+                </a>
+                <a href="#olympics">
+                    Olimpiada
+                </a>
+                <a href="#production">
+                    İstehsal
+                </a>
+                <a href="#contact">
+                    Əlaqə
+                </a>
+                <a href="#">Qeydiyyat</a>
 
-        </ul>
+            </ul>
 
-    </nav>
+            <div class="hamburger">
 
-    <section class="video">
-
-        <video class="background-video" autoplay muted loop>
-            <source src="./images/SUMbuilders.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-
-    </section>
-
-    <section class="case">
-
-        <div class="caseTop">
-
-            <h2>Case Studies</h2>
-            <p>Explore Real-Life Examples of Our Proven Digital Marketing <br> Success through Our Case Studies</p>
-
-        </div>
-
-        <div class="caseMain">
-
-            <div class="content">
-
-                <p>
-
-                    For a local restaurant, we <br>
-                    implemented a targeted PPC <br>
-                    campaign that resulted in a 50% <br>
-                    increase in website traffic and a <br>
-                    25% increase in sales.
-
-                </p>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
 
             </div>
 
-            <div class="line"></div>
-            
-            <div class="content">
+        </nav>
 
-                <p>
+        <section class="video" id="video">
 
-                    For a B2B software company, we <br>
-                    developed an SEO strategy that <br>
-                    resulted in a first page ranking <br> 
-                    for key keywords and a 200% <br>
-                    increase in organic traffic.
+            <video class="background-video" autoplay muted loop>
+                <source src="./images/SUMbuilders.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
-                </p>
+        </section>
+
+        <section class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"><img src="./images/img1.jpg" alt="Image 1"></div>
+                <div class="carousel-item"><img src="./images/img2.jpg" alt="Image 2"></div>
+                <div class="carousel-item"><img src="./images/img3.jpg" alt="Image 3"></div>
+            </div>
+            <button class="carousel-control prev">❮</button>
+            <button class="carousel-control next">❯</button>
+        </section>
+        
+
+        <section class="about" id="about">
+
+            <div class="aboutTop">
+
+                <h2>Haqqımızda</h2>
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing <br> Success through Our Case Studies</p>
 
             </div>
 
-            <div class="line"></div>
+            <div class="aboutMain">
 
-            <div class="content">
+                <div class="content">
 
-                <p>
+                    <p>
 
-                    For a national retail chain, we <br>
-                    created a social media <br> 
-                    marketing campaign that <br> 
-                    increased followers by 25% and <br> 
-                    generated a 20% increase in <br> 
-                    online sales.
+                        For a local restaurant, we 
+                        implemented a targeted PPC 
+                        campaign that resulted in a 50% 
+                        increase in website traffic and a 
+                        25% increase in sales.
 
-                </p>
+                    </p>
+
+                </div>
+
+                <div class="line"></div>
+                
+                <div class="content">
+
+                    <p>
+
+                        For a B2B software company, we 
+                        developed an SEO strategy that 
+                        resulted in a first page ranking  
+                        for key keywords and a 200% 
+                        increase in organic traffic.
+
+                    </p>
+
+                </div>
+
+                <div class="line"></div>
+
+                <div class="content">
+
+                    <p>
+
+                        For a national retail chain, we 
+                        created a social media  
+                        marketing campaign that  
+                        increased followers by 25% and  
+                        generated a 20% increase in  
+                        online sales.
+
+                    </p>
+
+                </div>
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <section class="training" id="training">
 
-</body>
-</html>
+            <div class="trainingTop">
+
+                <h2>Təlim</h2>
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing <br> Success through Our Case Studies</p>
+
+            </div>
+
+            <div class="trainingMain">
+
+                <div class="trainingCard">
+                    <div class="trainingCardTop">
+                        <div class="trainingCardTopStart">
+                            <img src="./images/pythonLogo.png" alt="#">
+                            <p>Python</p>
+                        </div>
+                        <img src="./icons/plus.svg" alt="#" class="toggle" onclick="toggleCard(1)">
+                    </div>  
+                    <div class="trainingCardText" id="content-1">
+                        <div class="vline"></div>
+                        <p>
+                            During the initial consultation, we will discuss your business goals and objectives, target audience, and current marketing efforts. This will allow us to understand your needs and tailor our services to best fit your requirements.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="trainingCard">
+                    <div class="trainingCardTop">
+                        <div class="trainingCardTopStart">
+                            <img src="./images/javascriptLogo.png" alt="#">
+                            <p>JavaScript</p>
+                        </div>
+                        <img src="./icons/plus.svg" alt="#" class="toggle" onclick="toggleCard(2)">
+                    </div>
+                    <div class="trainingCardText" id="content-2">
+                        <div class="vline"></div>
+                        <p>
+                            Learn how to create interactive and dynamic websites using JavaScript. We will help you get hands-on experience with web development by building projects that leverage JavaScript's power.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="trainingCard">
+                    <div class="trainingCardTop">
+                        <div class="trainingCardTopStart">
+                            <img src="./images/htmlLogo.png" alt="#">
+                            <p>HTML & CSS</p>
+                        </div>
+                        <img src="./icons/plus.svg" alt="#" class="toggle" onclick="toggleCard(3)">
+                    </div>
+                    <div class="trainingCardText" id="content-3">
+                        <div class="vline"></div>
+                        <p>
+                            Master the fundamentals of web development with HTML and CSS. This training will guide you through creating beautiful and responsive websites, starting with the basics and advancing to more complex layouts.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="olympics" id="olympics">
+
+            <div class="olympicsTop">
+
+                <h2>Olimpiada</h2>
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing <br> Success through Our Case Studies</p>
+
+            </div>
+
+            <div class="olympicsMain">
+
+                
+
+            </div>
+
+        </section>
+
+        <section class="production" id="production">
+
+            <div class="productionTop">
+
+                <h2>İstehsal</h2>
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing <br> Success through Our Case Studies</p>
+
+            </div>
+
+            <div class="productionMain">
+
+                <div class="productCardsTop">
+                    
+                    <div class="productionCard1 productionCards">
+                        
+                        <p class="textGreen"><span>3D Printer</span><br><span>Xidmətləri</span></p>
+                        <img src="./images/3dPrinter.png" alt="#">
+
+                    </div>  
+
+                    <div class="productionCard2 productionCards">
+                        
+                        <p class="textWhite"><span>Veb və mobil</span><br><span>Tətbiqlərin</span><br><span>Hazırlanması</span></p>
+                        <img src="./images/phone.png" alt="#">
+
+                    </div>
+
+                </div>
+
+                <div class="productCardsBottom">
+
+                    <div class="productionCard3 productionCards">
+                        
+                        <p class="textWhite"><span>Robotların</span><br><span>Hazırlanması</span></p>
+                        <img src="./images/robot.png" alt="#">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
+            <div class="contactTop">
+
+                <h2>Əlaqə</h2>
+                <p>Explore Real-Life Examples of Our Proven Digital Marketing <br> Success through Our Case Studies</p>
+
+            </div>
+
+            <div class="contactMain">
+
+                <form action="#" class="contactForm">
+
+                    <div class="inputBox">
+
+                        <label for="cName">Ad</label>
+                        <br>
+                        <input type="text" name="cName" placeholder="Ad">
+
+                    </div>
+                    <div class="inputBox">
+
+                        <label for="cEmail">Email</label>
+                        <br>
+                        <input type="email" name="cEmail" placeholder="Email">
+
+                    </div>
+                    <div class="inputBox">
+
+                        <label for="cMessage">Mesaj</label>
+                        <br>
+                        <textarea name="cMessage" id="#" placeholder="Mesaj"></textarea>
+
+                    </div>
+                    <input type="submit" value="Send Message" class="contactSubmit contactSubmitInside">
+
+                </form>
+
+                <img src="./images/legoRobot.png" alt="#">
+
+            </div>
+
+            <input type="submit" value="Send Message" class="contactSubmit contactSubmitOutside">
+
+        </section>
+
+        <section class="footer">
+
+            <nav class="footerNav">
+
+                <a href="#video" class="logoFoot"><img src="./images/sumbuilders-PNG.png" alt="#"></a>
+
+                <div class="footerCompanyLogos">
+
+                    <a href="https://www.instagram.com/sumbuilders?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="companyLogo" target="_blank">
+
+                        <img src="./icons/instagram.svg" alt="">
+
+                    </a>
+
+                    <a href="https://chat.whatsapp.com/HcL37cG0BjiK04rWqSTdkA" class="companyLogo" target="_blank">
+
+                        <img src="./icons/whatsapp.svg" alt="#">
+
+                    </a>
+
+                    <a href="https://www.facebook.com/sumbuilders/" class="companyLogo" target="_blank">
+
+                        <img src="./icons/facebook.svg" alt="#">
+
+                    </a>
+
+                    <a href="https://www.youtube.com/@sumbuilders" class="companyLogo" target="_blank">
+
+                        <img src="./icons/youtube.svg" alt="#">
+
+                    </a>
+
+                </div>
+        
+            </nav>
+        
+            <div class="footerMain">
+
+                <div class="footInfo">
+                    
+                    <p>Əlaqə:</p>
+                    <p>Email: sumbuilders@gmail.com</p>
+                    <p>Əlaqə nömrəsi: 555-567-8901</p>
+                    <p>Adres: 1234 Main St <br>
+                        Moonstone City, Stardust State 12345</p>
+
+                </div>
+
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1483.8930330364071!2d49.70504832174526!3d40.5588158056635!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4030911beff2211b%3A0x791ce610c187332e!2zU1VNYnVpbGRlcnMgUm9ib3RleG5pa2EgfCBQcm9xcmFtbGHFn2TEsXJtYSB8IE3DvGjJmW5kaXNsaWsgTcmZcmvJmXpp!5e0!3m2!1sen!2saz!4v1731692714542!5m2!1sen!2saz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+            <div class="footBottom">
+
+                <div class="vlineFoot"></div>
+
+                <p>&copy;2024 SumBuilders. All Rights Reserved.</p>
+
+            </div>
+
+        </section>
+
+        <script src="script.js"></script>
+
+    </body>
+    </html>
